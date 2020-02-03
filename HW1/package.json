@@ -1,0 +1,19 @@
+{
+    "name": "tasks",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Rajat verma",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "express": "^4.16.2",
+        "mongodb": "^3.3.0-beta2",
+        "uuid": "^3.3.2"
+    },
+    "devDependencies": {},
+    "description": ""
+}
