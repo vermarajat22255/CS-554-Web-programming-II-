@@ -1,0 +1,20 @@
+{
+    "name": "HW3",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "bluebird": "^3.4.7",
+        "express": "^4.14.1",
+        "flat": "^2.0.1",
+        "node-redis": "^0.1.7",
+        "redis": "^2.6.5"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

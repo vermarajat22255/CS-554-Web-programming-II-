@@ -1,0 +1,32 @@
+{{#each card}}
+<div class="card row col-sm-12 col-xs-12 col-md-6 col-lg-4">
+    <a id={{this.id}}>Tile {{this.id}}</a>
+    <img class="card-img-top" src="{{this.src}}" alt="{{this.title}}">
+    <div class="card-body">
+        <h1 class="card-title">{{this.title}}</h1>
+        <p class="card-text">{{this.details}}</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{this.title}}">
+            Show Details
+          </button>
+    </div>
+</div>
+
+<div class="modal fade" id="{{this.title}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel{{this.id}}" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel{{this.id}}">{{this.title}}</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+                {{this.modelDetails}}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

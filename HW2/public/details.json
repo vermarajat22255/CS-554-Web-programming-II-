@@ -1,0 +1,71 @@
+[{
+        "id": "1",
+        "title": "Foldable360",
+        "details": "A phone which is actually foldable",
+        "modelDetails": "This concept focus on the fact that a mobile phone does not really need to be rigid.so the screen wraps around the outside, rather than being hidden away on the inside, when it's snapped shut.When opened out, you've got a full screen 8-inch tablet; when snapped shut, you've got screens front and rear, as well as a grip holding the camera technology. It's also thinner than you might think, and as well as packing some premium specs it also offers 5G connectivity. Not a bad package.",
+        "src": "../public/minpics/samsung.png"
+    },
+    {
+        "id": "2",
+        "title": "KnifeKing",
+        "details": "May be Swiss convertible swiss knife or a short Knife",
+        "modelDetails": "While our smartphones can be considered the modern-day Swiss Army pocket knife, what with the fact that they’re able to carry out just about any and all tasks in the digital realm, their purpose in the real world extends not much further than your standard paperweight or door jamb.",
+        "src": "../public/minpics/Note10.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Detachable",
+        "details": "Oh really? Can we detach a camera from our phone?",
+        "modelDetails": "The device has a dual hinge, allowing it to fold in three parts. The upper part has a secondary display on the front and is larger than the lower part, which has two control keys. On the backside, a lens mount is visible. When the lens is removed, the mount is flush with the phone body",
+        "src": "../public/minpics/VivoNex.jpg"
+    },
+    {
+        "id": "4",
+        "title": "DMaster",
+        "details": "A phone with 3 dimensional pictures",
+        "modelDetails": "These Phones have an autostereoscopic parallax barrier display (glasses-free 3D display) and some also have a stereo or depth camera or 3D output via HDMI.",
+        "src": "../public/minpics/apple.png"
+    },
+    {
+        "id": "5",
+        "title": "TouchnType",
+        "details": "Get the power of touch and type at your hands",
+        "modelDetails": "Touch and Type combines the power of a touch screen with a keypad in a sleek phone built for entertainment. Type messages on the keypad, and touch the screen to open apps, play games and flip through your albums - all with one hand.",
+        "src": "../public/minpics/blackberry.jpg"
+    },
+    {
+        "id": "6",
+        "title": "Liquidity",
+        "details": "How about having a feel of liquid at the display",
+        "modelDetails": "These types of phone will have the power of giving a feel and allowing you to play the virtual sensitivity of  liquid at your fingertip, quite funny hah?",
+        "src": "../public/minpics/huawei.jpg"
+    },
+    {
+        "id": "7",
+        "title": "BackBone",
+        "details": "A Phone which can be weared between your knuckles?",
+        "modelDetails": "It is a transparent phone when you use it but it is convertible and flexible enough to be wear in between your fingers locking to your knuckles",
+        "src": "../public/minpics/LG.jpg"
+    },
+    {
+        "id": "8",
+        "title": "NCam",
+        "details": "How about having more cameras at the back",
+        "modelDetails": "Adding more cameras will help to capture and focus on every details possible ",
+        "src": "../public/minpics/motorola.jpg"
+    },
+    {
+        "id": "9",
+        "title": "DInteractive",
+        "details": "How about interacting with the phone in an entire new dimension?",
+        "modelDetails": "This will present user with a new lightening 3d screen to interact cool right.. ",
+        "src": "../public/minpics/Nokia.jpg"
+    },
+    {
+        "id": "10",
+        "title": "bitsnPieces",
+        "details": "A device that projects the phone on a another device",
+        "modelDetails": "Its ok if you loose your phone you dont need to buy a different one, just grab a new screen and your projector will project your phone on it!",
+        "src": "../public/minpics/oppo.jpg"
+    }
+]
