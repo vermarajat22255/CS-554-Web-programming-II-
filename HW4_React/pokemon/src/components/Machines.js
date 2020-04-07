@@ -84,18 +84,19 @@ const Machines = props => {
 
     items.push(
       <Pagination.Item
+      className="nav"
         key={number}
         active={number === pageData.page}
         href={uri}
       >
-        {number}
+        Visit {number}
       </Pagination.Item>
     );
   }
 
   const paginationBasic = (
     <div>
-      <Pagination onClick={showPage} size="sm">
+      <Pagination className="nav" onClick={showPage} size="sm">
         {items}
       </Pagination>
     </div>
@@ -105,11 +106,11 @@ const Machines = props => {
   if (pageData.page > 0 && pageData.page < 72) {
     links = (
       <Navbar className="justify-content-around">
-        <Link to={"/machines/page/" + pageData.previous} onClick={pageValueDec}>
+        <Link className="btn btn-dark" to={"/machines/page/" + pageData.previous} onClick={pageValueDec}>
           Previous
         </Link>
 
-        <Link to={"/machines/page/" + pageData.next} onClick={pageValueInc}>
+        <Link className="btn btn-dark" to={"/machines/page/" + pageData.next} onClick={pageValueInc}>
           Next
         </Link>
       </Navbar>
@@ -117,7 +118,7 @@ const Machines = props => {
   } else if (pageData.page <= 0) {
     links = (
       <Navbar className="justify-content-around">
-        <Link to={"/machines/page/" + pageData.next} onClick={pageValueInc}>
+        <Link className="btn btn-dark" to={"/machines/page/" + pageData.next} onClick={pageValueInc}>
           Next
         </Link>
       </Navbar>
@@ -125,7 +126,7 @@ const Machines = props => {
   } else if (pageData.page >= 72) {
     links = (
       <Navbar className="justify-content-around">
-        <Link to={"/machines/page/" + pageData.previous} onClick={pageValueDec}>
+        <Link className="btn btn-dark" to={"/machines/page/" + pageData.previous} onClick={pageValueDec}>
           Previous
         </Link>
       </Navbar>
@@ -136,8 +137,7 @@ const Machines = props => {
   if (!machineData ) return <Page404></Page404>;
   return (
     <div>
-      <p className="list">List of Machines</p>
-      <h2>Page: {pageData.page}</h2>
+      <p className="list">List of Machines Page: {pageData.page}</p>
 
       {links}
 

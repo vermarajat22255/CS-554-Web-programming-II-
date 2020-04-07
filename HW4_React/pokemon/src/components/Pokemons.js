@@ -32,7 +32,6 @@ const Pokemons = props => {
           .catch(err => console.log(err));
       } else {
         setPokeData(null);
-        console.log("else called", pokeData);
       }
     }
 
@@ -95,14 +94,14 @@ const Pokemons = props => {
         active={number === pageData.page}
         href={uri}
       >
-        {number}
+        Visit {number}
       </Pagination.Item>
     );
   }
 
   const paginationBasic = (
     <div>
-      <Pagination onClick={showPage} size="sm">
+      <Pagination className="nav" onClick={showPage} size="sm">
         {items}
       </Pagination>
     </div>
@@ -112,11 +111,19 @@ const Pokemons = props => {
   if (pageData.page > 0 && pageData.page < 72) {
     links = (
       <Navbar className="justify-content-around">
-        <Link to={"/pokemon/page/" + pageData.previous} onClick={pageValueDec}>
+        <Link
+          className="btn btn-dark"
+          to={"/pokemon/page/" + pageData.previous}
+          onClick={pageValueDec}
+        >
           Previous
         </Link>
 
-        <Link to={"/pokemon/page/" + pageData.next} onClick={pageValueInc}>
+        <Link
+          className="btn btn-dark"
+          to={"/pokemon/page/" + pageData.next}
+          onClick={pageValueInc}
+        >
           Next
         </Link>
       </Navbar>
@@ -124,7 +131,11 @@ const Pokemons = props => {
   } else if (pageData.page <= 0) {
     links = (
       <Navbar className="justify-content-around">
-        <Link to={"/pokemon/page/" + pageData.next} onClick={pageValueInc}>
+        <Link
+          className="btn btn-dark"
+          to={"/pokemon/page/" + pageData.next}
+          onClick={pageValueInc}
+        >
           Next
         </Link>
       </Navbar>
@@ -132,7 +143,11 @@ const Pokemons = props => {
   } else if (pageData.page >= 72) {
     links = (
       <Navbar className="justify-content-around">
-        <Link to={"/pokemon/page/" + pageData.previous} onClick={pageValueDec}>
+        <Link
+          className="btn btn-dark"
+          to={"/pokemon/page/" + pageData.previous}
+          onClick={pageValueDec}
+        >
           Previous
         </Link>
       </Navbar>
@@ -143,9 +158,7 @@ const Pokemons = props => {
   if (!pokeData) return <Page404></Page404>;
   return (
     <div>
-      <p className="list">List of pokemon</p>
-      <h2>Page: {pageData.page}</h2>
-
+      <p className="list">List of pokemon Page: {pageData.page}</p>
       {links}
 
       {(pokeData &&
@@ -163,9 +176,8 @@ const Pokemons = props => {
           );
         })) ||
         "No Data"}
-      <nav>
-        <ul className="pagination">{paginationBasic}</ul>
-      </nav>
+        
+      {paginationBasic}
     </div>
   );
 };

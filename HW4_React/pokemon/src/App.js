@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route,Switch, Link } from "react-router-dom";
 import logo from "./poke.svg";
-//import "./App.css";
+import "./App.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -29,10 +29,10 @@ function App() {
 
         <Router>
           <Navbar className="bg-dark justify-content-around">
-            <Link to="/"> Home </Link>
-            <Link to="/machines/page/0"> Machine Listing </Link>
-            <Link to="/berries/page/0"> Berry Listing </Link>
-            <Link to="/pokemon/page/0"> Pokemon Listing </Link>
+            <Link className="btn btn-light" to="/"> Home </Link>
+            <Link className="btn btn-light" to="/machines/page/0"> Machine Listing </Link>
+            <Link className="btn btn-light" to="/berries/page/0"> Berry Listing </Link>
+            <Link className="btn btn-light" to="/pokemon/page/0"> Pokemon Listing </Link>
           </Navbar>
 
           <Switch>

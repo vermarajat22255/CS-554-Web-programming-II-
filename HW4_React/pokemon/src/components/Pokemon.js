@@ -40,7 +40,7 @@ const Pokemon = props => {
     base_experience = showData.base_experience;
   }
 
-  if(!showData || !showData.name) return (<Page404></Page404>);
+  if (!showData || !showData.name) return <Page404></Page404>;
   return (
     <div className="cap-first-letter">
       <h1 className="list">

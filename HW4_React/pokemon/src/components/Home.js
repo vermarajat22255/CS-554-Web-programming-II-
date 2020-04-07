@@ -14,21 +14,20 @@ function Home() {
       </p>
       <p>
         We currently have tens of thousands of individual items in our database,
-        including:</p>
-        <ul>
-          <li>Moves</li>
-          <li>Abilities</li>
-          <li>Pokémon (including various forms)</li>
-          <li>Types</li>
-          <li>Egg Groups</li>
-          <li>Game Versions</li>
-          <li>Items</li>
-          <li>Pokédexes</li>
-          <li>Pokémon Evolution Chains</li>
-        </ul>
-        <p>
-        And that's just scratching the surface!
+        including:
       </p>
+      <ul>
+        <li>Moves</li>
+        <li>Abilities</li>
+        <li>Pokémon (including various forms)</li>
+        <li>Types</li>
+        <li>Egg Groups</li>
+        <li>Game Versions</li>
+        <li>Items</li>
+        <li>Pokédexes</li>
+        <li>Pokémon Evolution Chains</li>
+      </ul>
+      <p>And that's just scratching the surface!</p>
     </div>
   );
 }
