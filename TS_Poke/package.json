@@ -1,0 +1,31 @@
+{
+  "name": "TS_Poke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./src/server.ts",
+    "prod": "npm run build && npm start",
+    "start": "node ./dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --exec ts-node -- ./src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^13.13.2",
+    "@types/mongodb": "3.1.31",
+    "nodemon": "^2.0.3",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3",
+    "underscore": "1.10.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "guid": "0.0.12",
+    "mongodb": "3.5.5"
+  }
+}
